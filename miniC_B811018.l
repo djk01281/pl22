@@ -1,7 +1,7 @@
 
 
 %{
-//only accepts one line of int IDENTIFIER = CONSTANT; fortmat ex) int a = 3; 
+//only accepts files wiht one line of int IDENTIFIER = CONSTANT; fortmat ex) int a = 3; 
 #include <stdio.h>
 #include <stdlib.h>
 #include "y.tab.h"
