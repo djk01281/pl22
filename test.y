@@ -1,5 +1,5 @@
 %{
-//only accepts int IDENTIFIER = CONSTANT; fortmat ex) int a = 3; 
+//only accepts one line of int IDENTIFIER = CONSTANT; fortmat ex) int a = 3; 
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
