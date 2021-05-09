@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include "lex.yy.c"
 typedef char* string;
 extern FILE *yyin;
 
@@ -83,12 +84,11 @@ void initializeInputBuffer(){
     for(int i = 0; i < sizeof(input); i++) input[i] = 0;
     i = 0;
 }
-int main(int argc, char *argv){
-
+int main(int argc, char **argv){
+    
     initializeInputBuffer();
-    FILE *fp; int i;
-    fp=fopen("sample.txt","r");
-    yyin=fp;
+    yyin = fopen(argv[1], "r");
     yyparse();
+    fclose(yyin);
     return 0;
 }
