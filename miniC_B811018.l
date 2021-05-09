@@ -1,7 +1,7 @@
 
 
 %{
-//only accepts files wiht one line of int IDENTIFIER = CONSTANT; fortmat ex) int a = 3; 
+//only accepts files with one line of int IDENTIFIER = CONSTANT; fortmat ex) int a = 3; 
 #include <stdio.h>
 #include <stdlib.h>
 #include "y.tab.h"
@@ -27,4 +27,4 @@ int yywrap(void)
 {
 return 1;
 }
-//end of file
+//only accepts files with one line of int IDENTIFIER = CONSTANT; fortmat ex) int a = 3; 
