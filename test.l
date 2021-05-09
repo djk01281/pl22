@@ -1,7 +1,7 @@
 
 
 %{
-//only excepts int IDENTIFIER = CONSTANT; fortmat
+//only excepts int IDENTIFIER = CONSTANT; fortmat ex) int a = 3; 
 #include <stdio.h>
 #include <stdlib.h>
 #include "y.tab.h"
