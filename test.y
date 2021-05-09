@@ -1,5 +1,5 @@
 %{
-//only accepts one line of int IDENTIFIER = CONSTANT; fortmat ex) int a = 3; 
+//only accepts files wiht one line of int IDENTIFIER = CONSTANT; fortmat ex) int a = 3; 
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -86,10 +86,11 @@ void initializeInputBuffer(){
     i = 0;
 }
 int main(int argc, char **argv){
-    
+    //only accepts files wiht one line of int IDENTIFIER = CONSTANT; fortmat ex) int a = 3; 
     initializeInputBuffer();
     yyin = fopen(argv[1], "r");
     yyparse();
     fclose(yyin);
     return 0;
+    
 }
